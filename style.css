@@ -27,7 +27,7 @@
     font-size: 11pt;
     font-weight: lighter;
 }
-#heading  {
+h3  {
     font-family: Raleway,Helvetica,sans-serif;
     font-weight: 800;
     font-size: 14pt;  
@@ -72,25 +72,20 @@ li  {
 }
 
 .skills {
+    padding: 0;
     text-align: center;
-    margin: auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-#skill  {
-    display: inline-flex;
-}
 .column    {
-    width: 50%;
-    text-align: left;
     display: inline-flex;
-    margin: auto;
+    text-align: left;
+    align-items: center;
     padding: 10px;
 }
 #skilldesc  {
     font-size: small;
     padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body    {
@@ -107,6 +102,33 @@ body    {
     margin: auto;
 }
 
+
+.samplework  {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: small;
+}
+.samplelink {
+    overflow: hidden;
+    background-color: #e4e3e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    /* max-width: 40%; */
+    margin: 10px;
+}
+.linkrow  {
+    display: inline-flex;
+}
+.samplelink:hover   {
+    opacity: 80%;
+}
+
+.linkimg    {
+    width: 100%;
+}
+
 .footer {
     text-align: center;
     background-color: #e4e3e3;
@@ -116,7 +138,6 @@ body    {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
 
 @keyframes scale {
     0% {
