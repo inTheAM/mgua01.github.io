@@ -1,8 +1,29 @@
-.profile  {
+.topnav {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    font-size: 8pt;
+    font-weight: bold;
+    font-family: Raleway,Helvetica,sans-serif;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    letter-spacing: 0.5em;
+    position: fixed;
+    z-index: 10;
+}
+.navlink   {
+    color: rgb(72, 72, 72);
+}
+.navlink:hover   {
+    color: rgb(0, 145, 198);
+}
+
+
+.profile   {
     text-align: center;
     background-color: #e4e3e3;
-    margin: 0;
-    padding-top: 20px;
+    border-bottom: 1px solid rgb(164, 164, 164);
+    padding-top: 30px;
 }
 
 #profilepic {
@@ -10,16 +31,13 @@
     height: 150px;
     clip-path: circle(40%);
     margin: auto;
-    border: 1px solid whitesmoke
-    
-}
-#profilepic:hover   {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid whitesmoke;
+    filter: grayscale(40%);
 }
 .intro   {
     font-family: Raleway,Helvetica,sans-serif;
     font-weight: 800;
-    font-size: 14pt;  
+    font-size: 12pt;  
     letter-spacing: .2em;
     color: rgb(72, 72, 72);
 }
@@ -30,23 +48,24 @@
 h3  {
     font-family: Raleway,Helvetica,sans-serif;
     font-weight: 800;
-    font-size: 14pt;  
+    font-size: 12pt;  
     color: rgb(72, 72, 72);
 }
-#highlights {
+#about {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 8pt;
     font-weight: lighter;
 }
 
 hr  {
-    width: 75%;
+    width: 80%;
 }
 
 #icon  {
     width: 30px;
     height: 30px ;
-    padding: 10px; 
+    padding: 10px;
+    opacity: 75%;; 
 }
 #staticicon {
     width: 20px;
@@ -90,6 +109,7 @@ li  {
 
 body    {
     margin: 0;
+    z-index: 3;
 }
 
 .bio    {
@@ -98,12 +118,12 @@ body    {
     font-weight: lighter;
     text-align: center;
     color: black;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
 
-.samplework  {
+.highlights  {
     width: inherit;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -115,7 +135,7 @@ body    {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     align-items: center;
-    max-width: 30%;
+    max-width: 40%;
     display: inline-flex;
     margin: 10px;
 }
@@ -125,9 +145,20 @@ body    {
 
 .linkimg    {
     width: 100%;
+    filter: grayscale(50%);
+}
+
+a   {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.textlink   {
+    text-decoration: underline;
 }
 
 .footer {
+    width: 100%;
     text-align: center;
     background-color: #e4e3e3;
     font-size: 8pt;
@@ -135,6 +166,10 @@ body    {
     color: #939393;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+    bottom: 0px;
+    border-top: 1px solid rgb(164, 164, 164);
+    
 }
 
 @keyframes scale {
@@ -145,3 +180,39 @@ body    {
         transform: scale(1.2);
     }
 }
+
+.screenshots    {
+    width: 100%;
+    display: inline-flex;
+}
+.projectintro {
+    padding-top: 20px;
+    text-align: center;
+    background-color: #e4e3e3;
+    font-family: Raleway,Helvetica,sans-serif;
+    font-size: 14pt;  
+    color: rgb(72, 72, 72);
+    border-bottom: 1px solid rgb(164, 164, 164);
+}
+
+.screenshot {
+    margin: 10px;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.projectdesc    {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+    font-weight: lighter;
+    text-align: center;
+    color: black;
+    width: 80%;
+    margin: auto;
+    
+}
+.projectimages  {
+    text-align: center;
+    background-color: white;
+}
+
